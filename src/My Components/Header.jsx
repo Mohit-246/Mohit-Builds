@@ -28,7 +28,7 @@ function Header() {
                 : 'bg-transparent'
                 }`}>
                 <div className='flex items-center justify-evenly md:justify-between p-4 max-w-7xl mx-auto'>
-                    <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-500 to-pink-500 bg-clip-text text-transparent">Code Viser</h2>
+                    <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-500 to-pink-500 bg-clip-text text-transparent">Mohit Builds</h2>
                     <nav className='flex items-center justify-between'>
                         <ul className='hidden md:flex gap-8 text-gray-500 items-center'>
                             <li><a href="#home" className='font-semibold font-2xl secondary-font text-gray-300 hover:text-white p-3 rounded-sm'>Home</a></li>

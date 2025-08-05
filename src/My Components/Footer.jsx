@@ -7,7 +7,7 @@ function Footer() {
             <section id="contact" className='scroll-mt-16 bg-slate-950'>
                 <div className="grid p-4 space-x-6 md:grid-cols-3 md:space-x-6 ">
                     <div className="p-4 space-y-6">
-                        <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-500 to-pink-500 bg-clip-text text-transparent">Code Viser</h2>
+                        <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-500 to-pink-500 bg-clip-text text-transparent">Mohit Builds</h2>
                         <p className="text-gray-400 font-semibold ">I am Mohit, Full Stack Developer passionate about creating exceptional digital experiences with modern technologies and clean code</p>
                         <div className="flex items-center justify-around mr-8">
                             <a href="https://github.com/Mohit-246" target="_blank" rel="noopener noreferrer" className="bg-slate-800/60 p-2 rounded-lg hover:scale-110"><Github size={25} /></a>

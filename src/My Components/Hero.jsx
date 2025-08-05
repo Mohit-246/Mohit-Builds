@@ -22,7 +22,7 @@ function Hero() {
                             <a href="https://www.linkedin.com/in/mohit-chaudhary-/" target='_blank' className='p-3 bg-slate-800 hover:bg-slate-700 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25' ><Linkedin size={24} /></a>
                             <a href="https://github.com/Mohit-246" target='_blank' className='p-3 bg-slate-800 hover:bg-slate-700 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25'>
                                 <Github size={24} /></a>
-                            <a href="mailto:chaudharymohit2408@gmail.com?subject=Hello&body=I wanted to reach out." className='p-3 bg-slate-800 hover:bg-slate-700 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25'><Mail size={24} /></a>
+                            <a href="mailto:mohitdigibus001@gmail.com?subject=Hello&body=I wanted to reach out."  className='p-3 bg-slate-800 hover:bg-slate-700 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25'><Mail size={24} /></a>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center secondary-font">
                             <a href="#project" className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105">View Project</a>

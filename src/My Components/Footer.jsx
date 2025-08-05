@@ -10,16 +10,16 @@ function Footer() {
                         <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-500 to-pink-500 bg-clip-text text-transparent">Mohit Builds</h2>
                         <p className="text-gray-400 font-semibold ">I am Mohit, Full Stack Developer passionate about creating exceptional digital experiences with modern technologies and clean code</p>
                         <div className="flex items-center justify-around mr-8">
-                            <a href="https://github.com/Mohit-246" target="_blank" rel="noopener noreferrer" className="bg-slate-800/60 p-2 rounded-lg hover:scale-110"><Github size={25} /></a>
-                            <a href="https://www.linkedin.com/in/mohit-chaudhary-/" target="_blank" rel="noopener noreferrer" className="bg-slate-800/60 p-2 rounded-lg hover:scale-110"><Linkedin size={25} /></a>
-                            <a href="mailto:chaudharymohit2408@gmail.com?subject=Hello&body=I wanted to reach out." className="bg-slate-800/60 p-2 rounded-lg hover:scale-110"><Mail size={25} /></a>
+                            <a href="https://github.com/Mohit-246" target="_blank" rel="noopener noreferrer" className="bg-slate-800/60 p-2 rounded-lg hover:scale-110 transform duration-200"><Github size={25} /></a>
+                            <a href="https://www.linkedin.com/in/mohit-chaudhary-/" target="_blank" rel="noopener noreferrer" className="bg-slate-800/60 p-2 rounded-lg hover:scale-110 transform duration-200"><Linkedin size={25} /></a>
+                            <a href="mailto:mohitdigibus001@gmail.com?subject=Hello&body=I wanted to reach out."  className="bg-slate-800/60 p-2 rounded-lg hover:scale-110 transform duration-200"><Mail size={25} /></a>
                         </div>
                     </div>
                     <div className="p-4 space-y-6">
                         <h2 className="text-2xl font-semibold py-4">Quick Link</h2>
                         <div className="flex flex-col space-y-2">
                             <a href="#contact" className="font-semibold secondary-font text-gray-500 hover:text-gray-200">Contact</a>
-                            <a href="#project" className="font-semibold secondary-font text-gray-500 hover:text-gray-200">Project</a>
+                            <a href="#projects" className="font-semibold secondary-font text-gray-500 hover:text-gray-200">Project</a>
                             <a href="#skill" className="font-semibold secondary-font text-gray-500 hover:text-gray-200">Skills</a>
                             <a href="#experience" className="font-semibold secondary-font text-gray-500 hover:text-gray-200">Experience</a>
                         </div>

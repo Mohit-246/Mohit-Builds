@@ -18,7 +18,7 @@ function Header() {
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [menuOpen]);
 
 
     return (
@@ -48,11 +48,12 @@ function Header() {
             {/* Mobile Menu */}
             {menuOpen && (
                 <div className="flex flex-col">
-                    <a href="#home" onCliick={toggleMenu} className='font-semibold'>Home</a>
-                    <a href="#about" onCliick={toggleMenu} className='font-semibold'>About</a>
-                    <a href="#skill" onCliick={toggleMenu} className='font-semibold'>Skills</a>
-                    <a href="#project" onCliick={toggleMenu} className='font-semibold'>Projects</a>
-                    <a href="#contact" onCliick={toggleMenu} className='font-semibold'>Contact</a>
+                    <a href="#home" onClick={toggleMenu} className='font-semibold'>Home</a>
+                    <a href="#about" onClick={toggleMenu} className='font-semibold'>About</a>
+                    <a href="#skill" onClick={toggleMenu} className='font-semibold'>Skills</a>
+                    <a href="#project" onClick={toggleMenu} className='font-semibold'>Projects</a>
+                    <a href="#experience" onClick={toggleMenu} className='font-semibold'>Experience</a>
+                    <a href="#contact" onClick={toggleMenu} className='font-semibold'>Contact</a>
                 </div>
             )}
         </>

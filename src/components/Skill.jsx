@@ -1,5 +1,5 @@
 import React from "react";
-import SkillTab from "../My Elements/SkillTab";
+import SkillTab from "../elements/SkillTab";
 
 function Skill() {
     return (

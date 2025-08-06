@@ -1,6 +1,5 @@
-import { Building2, Calendar, LocateIcon, MapPin } from "lucide-react";
 import React from "react";
-import ExperienceBox from "../My Elements/ExperienceBox";
+import ExperienceBox from "../elements/ExperienceBox";
 
 function Experience() {
 

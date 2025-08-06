@@ -1,5 +1,5 @@
 import React from "react";
-import SkillBar from "../My Elements/SkillBar";
+import SkillBar from "./SkillBar";
 
 function SkillTab({skillcategory, skills}) {
     return (

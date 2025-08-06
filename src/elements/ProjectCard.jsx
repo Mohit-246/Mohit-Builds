@@ -4,8 +4,8 @@ import { ExternalLink, Github } from "lucide-react";
 function ProjectCard({ img, title, description, techStack, liveLink, gitLink }) {
     return (
         <>
-            <div className="w-full  p-8">
-                <div className="group  bg-slate-700/30 rounded-xl overflow-hidden border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105"
+            <div className="w-full md:h-screen p-8">
+                <div className="group md:h-11/12 bg-slate-700/30 rounded-xl overflow-hidden border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105"
                 >
                     <div className="relative overflow-hidden ">
                         <img src={img} alt={title} className="w-full h-auto md:h-48 object-cover group-hover:scale-110 transition-all duration-300" />

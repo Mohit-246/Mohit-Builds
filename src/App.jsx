@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './My Components/Header'
-import Hero from './My Components/Hero'
-import About from './My Components/About'
-import Project from './My Components/Project'
-import Skill from './My Components/Skill'
-import Experience from './My Components/Experience'
-import Contacts from './My Components/Contacts'
-import Footer from './My Components/Footer'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import About from './components/About'
+import Project from './components/Project'
+import Skill from './components/Skill'
+import Experience from './components/Experience'
+import Contacts from './components/Contacts'
+import Footer from './components/Footer'
 
 function App() {
 

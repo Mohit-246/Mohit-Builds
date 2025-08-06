@@ -14,7 +14,7 @@ function About() {
                         <p className="text-left text-xl font-medium m-6 text-gray-400">My journey in Web development began with a curiosity about how things work behind the scenes.<br/>Today, I specialize in building scalable web applications using modern technologies like React, Node.js, and cloud platforms.</p>
                         <p className="text-left text-xl font-medium m-6 text-gray-400">I believe in writing clean, maintainable code and creating user experiences that are both functional and delightful. When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.</p>
 
-                        <div className="py-10 grid grid-cols-3 gap-4 text-center">
+                        <div className="py-10 md:grid grid-cols-3 gap-4 space-y-3 text-center">
                             <div className="p-2 bg-slate-800 rounded-lg border border-slate-400 hover:border-amber-500/50 transition-all duration-300">
                                 <div className="text-2xl font-bold text-amber-600 ">50+</div>
                                 <div className="font-semibold text-gray-400">Projects</div>

@@ -1,9 +1,23 @@
-import React, { useRef, useState } from "react";
-import emailjs from 'emailjs-com';
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import React, { useState } from "react";
+import { Mail, MapPin, Phone, Send, CheckCircle, X } from "lucide-react";
 
 function Contact() {
-    
+
+    const [showPopup, setshowPopup] = useState(false);
+    const handlepopup = (e) => {
+        e.preventDefault();
+        setshowPopup(true);
+        setTimeout(() => {
+            setshowPopup(false);
+        }, 4000);
+    }
+
+    const [name,setName] =useState("");
+    const [email,setEmail] =useState("");
+    const [phone,setPhone] =useState("");
+    const [message,setMessage] =useState("");
+
+
     return (
         <>
             <section id="contact" className='scroll-mt-16 py-20 bg-slate-800/50'>
@@ -49,7 +63,7 @@ function Contact() {
 
                     <div className="w-auto md:w-full space-y-8 m-4 mb-8">
                         <h2 className="text-4xl primary-font text-left text-white font-extrabold p-5 rounded-lg m-5">Send Message</h2>
-                        <form method="post" className="space-y-8 p-6 m-4">
+                        <form onSubmit={handlepopup} method="POST" className="space-y-8 p-6 m-4">
                             <div className="">
                                 <div className="w-full space-y-2 justify-center items-center ">
                                     <label htmlFor="" className="block text-xl font-semibold">Your Name *</label>
@@ -58,24 +72,33 @@ function Contact() {
                                 <br />
                                 <div className="w-full space-y-2 justify-center items-center ">
                                     <label htmlFor="" className="block text-xl font-semibold">E-Mail Id *</label>
-                                    <input type="email" className=" p-4 border-0 bg-slate-600 w-full rounded-lg" onChange={(e) => setName(e.target.value)} name="Email"  required placeholder="Example : Abc@xyz.com" />
+                                    <input type="email" className=" p-4 border-0 bg-slate-600 w-full rounded-lg" onChange={(e) => setEamil(e.target.value)} name="Email" required placeholder="Example : Abc@xyz.com" />
                                 </div>
                                 <br />
                                 <div className="w-full space-y-2 justify-center items-center ">
                                     <label htmlFor="" className="block text-xl font-semibold">Phone Number *</label>
-                                    <input type="tel" className=" p-4 border-0 bg-slate-600 w-full rounded-lg" onChange={(e) => setName(e.target.value)} name="phone" required placeholder="Example : +91 XXXXX-XXXXX" />
+                                    <input type="tel" className=" p-4 border-0 bg-slate-600 w-full rounded-lg" onChange={(e) => setPhone(e.target.value)} name="phone" required placeholder="Example : +91 XXXXX-XXXXX" />
                                 </div>
                                 <br />
                                 <div className="w-full space-y-2 justify-center items-center ">
                                     <label htmlFor="" className="block text-xl font-semibold">Message*</label>
-                                    <textarea type='text' rows='4' className=" p-4 border-0 bg-slate-600 w-full rounded-lg" name="Message" required placeholder="Message (Ex; Requirements, Your Need etc.)" />
+                                    <textarea type='text' rows='4'onChange={(e)=>setMessage(e.target.value)} className=" p-4 border-0 bg-slate-600 w-full rounded-lg"  name="Message" required placeholder="Message (Ex; Requirements, Your Need etc.)" />
                                 </div>
                                 <p className="text-xs text-gray-500 font-semibold text-right">( All field are required )</p>
                             </div>
                             <div className="justify-center items-center">
-                                <button type="submit" className="inline-flex text-xl items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white font-medium hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"><Send size={30} /> Send Message</button>
+                                <button type="submit" className="inline-flex text-xl items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white font-medium hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105"><Send size={30} />&nbsp;Send Message</button>
                             </div>
                         </form>
+                        {showPopup && (
+                            <div className="fixed top-18 right-1/3 z-50 animate-slide-in bg-slate-900 border border-sky-800 text-white itemc px-6 py-4 rounded-lg shadow-lg flex items-center space-x-3">
+                                <CheckCircle className="font-lato w-6 h-6 text-white" />
+                                <span className="text-md font-medium">Form submitted successfully!</span>
+                                <button onClick={() => setShowPopup(false)}>
+                                    <X className="w-6 h-6 text-white rounded-lg hover:text-gray-100 hover:bg-slate-500" />
+                                </button>
+                            </div>
+                        )}
                     </div>
 
                 </div>

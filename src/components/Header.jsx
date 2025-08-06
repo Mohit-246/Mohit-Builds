@@ -41,7 +41,7 @@ function Header() {
                     </nav>
 
                     <div>
-                        <button onCliick={toggleMenu} className='md:hidden font-bold text-sky-500 rounded-lg m-6'>☰</button>
+                        <button onClick={toggleMenu} className='md:hidden font-bold text-sky-500 rounded-lg m-6'>☰</button>
                     </div>
                 </div>
             </header>

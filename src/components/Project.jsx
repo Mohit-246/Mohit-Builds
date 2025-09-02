@@ -33,9 +33,17 @@ function Project() {
                         img='https://images.pexels.com/photos/5632396/pexels-photo-5632396.jpeg'
                         title='E-Com Platform (On Going)'
                         description='An e-commerce website project allows users to browse, select, and purchase products online. It includes features like product catalogs, shopping carts, secure checkout, and order tracking. Users can create accounts, manage orders, and view purchase history. The platform also provides admin controls for managing products, users, and sales.'
-                        gitLink='https://github.com/Mohit-246/News-App'
-                        liveLink='https://news-app-eight-fawn.vercel.app/'
+                        gitLink=''
+                        liveLink=''
                         techStack={['React', 'Vite', 'Tailwindcss',]}
+                    />
+                     <ProjectCard
+                        img='https://images.pexels.com/photos/8062358/pexels-photo-8062358.jpeg'
+                        title='TaskFlow - Your Personal Productivity Champion'
+                        description='Stay organized, focused, and in control with TaskFlow, the ultimate task management app designed to simplify your life. Whether you’re managing daily to-dos, planning projects, or tracking long-term goals, TaskFlow gives you a clean and intuitive space to get things done.'
+                        gitLink='https://github.com/Mohit-246/TaskFlow'
+                        liveLink=''
+                        techStack={['React', 'Vite', 'Tailwindcss','Local Storage']}
                     />
                 </div>
                 <div className="justify-center text-center items-center">
